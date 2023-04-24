@@ -1,6 +1,7 @@
 html {
     height: auto;
 }
+
 body {
     padding: 0%;
     margin: 0%;
@@ -15,6 +16,7 @@ body {
     src: url(./Odin-font.ttf);
 }
 .background {
+    position: relative;
     height: 100vh;
     width: 40vw;
 }
@@ -23,7 +25,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 766px;
+    width: 39.89vw;
     height: 120px;
     position: absolute;
     top: 20vh;
@@ -42,19 +44,90 @@ body {
 
 .text {
     font-family: Odin ,Georgia, 'Times New Roman', Times, serif ; 
-    font-size: 85px;
+    font-size: 5vw;
     position: absolute;
     top: 20vh;
     left: 10vw;
     color: rgb(255, 255, 255);
 }
 
-.description-text {
+.sign-up-form {
     background-color: aliceblue;
     height: 18vh;
     width: 57vw;
     padding-left: 60px;
     padding-top: 15vh;
+        
+}
+
+.text-form {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+    font-weight: bold;
+    width: 50vw;
+    margin-bottom: 20px;
     font-size: xx-large;
     font-weight: bold;
+    
+}
+
+.form-space {
+    height: 40vh;
+    padding-top: 16px;
+    padding-left: 60px;
+    box-shadow: 0px 15px 20px -20px;    
+}
+
+.action {
+    font-family:'Times New Roman', Times, serif;
+    font-size: x-large;
+    font-weight: bold;
+    padding-bottom: 30px;            
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    width: 57vw;
+    margin-bottom: 45px;
+        
+}
+
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    width: 57vw;
+    margin-bottom: 45px; 
+}
+
+.password {
+    display: flex;
+    flex-direction: row;
+    width: 57vw;
+    margin-bottom: 45px; 
+}
+
+.form-space > div + div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+label {
+    font-family:'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+input {
+    margin-right: 120px;
+    margin-left: 12px;
+    height: 17px;
+    width: 15vw;
+    border-radius: 5px;
+}
+
+input:focus {
+    box-shadow: 1px 1px 8px;
+    border: 2px solid rgb(85, 156, 248);
+    outline: none;
 }
