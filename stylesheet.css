@@ -131,3 +131,8 @@ input:focus {
     border: 2px solid rgb(85, 156, 248);
     outline: none;
 }
+
+#email:invalid {
+    outline: none;
+    border: 2px solid red
+}
