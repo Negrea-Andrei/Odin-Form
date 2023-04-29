@@ -15,10 +15,12 @@ function checkPassword() {
 }
 
 submit.addEventListener('click', (event) => {
+    different.innerHTML ="";
     if(password.value !== confirmPassword.value) {
-        event.preventDefault();
-        different.innerHTML ="";
+        event.preventDefault();        
         different.innerHTML = "Passwords do not match!";
+        password.style.borderColor = "red";
+        confirmPassword.style.borderColor = "red";
         return true;
     } 
 })

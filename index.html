@@ -55,12 +55,12 @@
                         <div class="password">
                             <div class="password-enter">
                                 <p for="password">PASSWORD*</p>
-                                <input type="password" required id="password">
+                                <input type="password" required id="password" pattern="(\d{10})" title="Please enter a password with 10 characters">
+                                <div class="password-failed"></div>
                             </div>
                             <div class="password-confirm">
                                 <p for="password-confirm">CONFIRMED PASSWORD*</p>
-                                <input type="password" required id="password-confirm">
-                                <div class="password-failed"></div>
+                                <input type="password" required id="password-confirm">                                
                             </div>
                         </div>
                 </div>

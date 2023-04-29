@@ -144,7 +144,7 @@ input:focus {
 
 #email:invalid, #phone:invalid {
     outline: none;
-    border: 2px solid red
+    border: 1px solid red
 }
 
 
