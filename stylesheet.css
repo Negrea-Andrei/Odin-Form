@@ -17,7 +17,7 @@ body {
 .left {
     background-image: url(./form-image.jpg);
     height: auto;
-    width: 50%;
+    width: 30%;
     background-repeat: no-repeat; 
     background-size: cover;
 }
