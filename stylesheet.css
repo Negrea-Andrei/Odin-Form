@@ -1,13 +1,48 @@
 body {
-    padding: 0%;
-    margin: 0%;
-    border: 0%;
+    padding: 0;
+    margin: 0;
+    border: 0;
     display: flex;
-    flex-direction: row;
-    height: auto;
+    flex-direction: column; /* Change to column for responsiveness */
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
     box-sizing: border-box;
 }
 
+/* Add a media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .left {
+        width: 100%; /* Adjust the width for smaller screens */
+    }
+
+    .right {
+        width: 100%; /* Adjust the width for smaller screens */
+    }
+
+    .background-for-title {
+        height: 10%; /* Adjust the height for smaller screens */
+        top: 10vh; /* Adjust the top position for smaller screens */
+    }
+
+    .title {
+        font-size: 4vw; /* Adjust the font size for smaller screens */
+    }
+
+    .footer {
+        top: 60vh; /* Adjust the top position for smaller screens */
+    }
+
+    .first-section,
+    .container-for-form,
+    .third-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    input {
+        margin-right: 0; /* Remove margin for smaller screens */
+        width: 100%; /* Make the input full width on smaller screens */
+    }
+}
 
 @font-face {
     font-family: Odin;
@@ -18,13 +53,13 @@ body {
     background-image: url(./form-image.jpg);
     height: auto;
     width: 50%;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
 .right {
     height: 100vh;
-    width: 70%; 
+    width: 70%;
 }
 
 .background-for-title {
@@ -41,7 +76,7 @@ body {
 
 .title {
     color: rgb(240, 248, 255);
-    font-family: Odin ,'Times New Roman', Times, serif;
+    font-family: Odin, 'Times New Roman', Times, serif;
     font-size: 5vw;
     position: relative;
     width: fit-content;
@@ -61,12 +96,13 @@ body {
     position: relative;
     top: 80vh;
 }
+
 .container {
     background-color: rgb(249, 250, 251);
 }
 
 .first-section {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: lighter;
     width: auto;
     height: 35vh;
@@ -80,7 +116,7 @@ body {
 .second-section {
     box-shadow: 3px 16px 12px rgb(201, 201, 201);
     background-color: rgb(255, 255, 255);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .advertisement {
@@ -103,14 +139,16 @@ body {
     padding-bottom: 10px;
 }
 
-.form-name, .personal-details, .password {
+.form-name,
+.personal-details,
+.password {
     display: flex;
     flex-direction: row;
     padding-bottom: 20px;
 }
 
 .password-failed {
-    color: red
+    color: red;
 }
 
 .third-section {
@@ -118,12 +156,11 @@ body {
     padding-left: 100px;
     padding-right: 75px;
     padding-top: 35px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 label {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: large;
 }
 
@@ -142,16 +179,16 @@ input:focus {
     outline: none;
 }
 
-#email:invalid, #phone:invalid {
+#email:invalid,
+#phone:invalid {
     outline: none;
-    border: 1px solid red
+    border: 1px solid red;
 }
 
-
-a:visited, a:link {
+a:visited,
+a:link {
     color: aliceblue;
 }
-
 
 p {
     margin-bottom: -2px;
@@ -180,8 +217,9 @@ button:hover {
     background-color: rgb(66, 112, 39);
 }
 
-.rol:link, .rol:visited, .rol:active {
+.rol:link,
+.rol:visited,
+.rol:active {
     color: rgb(52, 88, 31);
     text-decoration: none;
 }
-
